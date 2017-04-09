@@ -24,7 +24,7 @@ from article.models import Article
 def home(request):
     post_list = Article.objects.all()  # 获取全部文章
     return render(request, 'article/articles.html', {"post_list": post_list,
-                                                     "title": "j_hao104's blog"})
+                                                     "title": "一蓑烟雨任平生"})
 
 
 def detail(request, id):
